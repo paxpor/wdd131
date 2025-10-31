@@ -1,1 +1,3 @@
-document.getElementById("lastModified").innerHTML = document.lastModified;
+document.getElementById("lastModified").textContent =
+  "Last Modification: " + document.lastModified;
+

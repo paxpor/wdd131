@@ -1,61 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Paxton Porter">
-        <meta name="description" content="WDD 131: Dynamic Web Fundamentals - Paxton Porter - About Me Page">
-        <title>WDD131 - Dynamic Web Fundamentals - Paxton Porter</title>
-        <link rel="stylesheet" href="styles/base.css">
-        <script src="scripts/getdates.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Paxton Porter</span></h1>
-        <nav>
-            <a href="https://www.linkedin.com/">LinkedIn</a>
-            <a href="https://byupw.instructure.com/">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/5?lang=eng&id=p26#p26">Scripture</a>
-            <a href="#">Final Project</a>
-        </nav>
-        </header>
-        <main>
-            <section>
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <div class="text">
-                        <p>Hello! My name is Paxton Porter. I am currently a student at BYU-Pathway pursuing a degree in Web Development. I have a passion for creating dynamic and engaging web experiences.</p>
-                        <p>In my free time, I enjoy hiking, reading, and exploring new technologies in web development.</p>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                        <h3>Pocatello Idaho</h3>
-                        <hr>
-                        <div class="location">
-                            <img src="images/idaho.jpg" alt="Pocatello Idaho">
-                            <p>Picture of Idaho's outdoors.</p>
-                        </div>
+  <meta name="description" content="WDD 131: Dynamic Web Fundamentals - Student homepage by Paxton Porter. Learn web design, HTML, CSS, and dynamic web principles.">
+  <meta name="author" content="Paxton Porter">
 
-                        <p>Pocatello, Idaho is known for its beautiful landscapes and outdoor recreational opportunities. It is home to Idaho State University and offers a vibrant community with a rich history.</p>
-                    </div>
-                    <div class="photo">
-                        <img src="images/profile-picture.jpg" alt="Photo of Me">
-                    </div>    
-                </div>    
-            </section>
+  <title>WDD 131: Dynamic Web Fundamentals - Paxton Porter</title>
 
-            <aside class="resources">
-                <ul>
-                    <li><a href="https://www.w3schools.com/html/">HTML Tutorial - W3Schools</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS Documentation - MDN Web Docs</a></li>
-                    <li><a href="https://www.freecodecamp.org/">FreeCodeCamp - Learn to Code for Free</a></li>
-                    <li><a href="https://css-tricks.com/">CSS-Tricks - Tips, Tricks, and Techniques on using CSS</a></li>
-                    <li><a href="https://web.dev/">web.dev - Web Development Resources</a></li>
-                    <li><a href="https://stackoverflow.com/">Stack Overflow - Community of Developers</a></li>
-                </ul>
-            </aside>
-        </main>
-        <footer>
-            <p>&copy; 2025 Paxton Porter | Idaho</p>
-            <p class="modified">Last Modified: <span id="lastModified"></span></p>
-        </footer>
-    </body>        
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+
+  <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>
+      <span id="course-title">WDD 131: Dynamic Web Fundamentals</span> - Paxton Porter
+    </h1>
+    <nav>
+      <a href="https://www.linkedin.com/">LinkedIn</a>
+      <a href="https://byupw.instructure.com/">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/5?lang=eng&id=p26#p26">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="text">
+          <p>My name is Paxton Porter. I was born and raised in Idaho and currently study Web Development through BYU–Pathway. I love technology, creativity, and learning how the web works. I enjoy the outdoors, spending time with friends, and improving my coding skills.</p>
+
+          <h3>Pocatello, Idaho</h3>
+          <hr>
+          <div class="location">
+            <img src="images/idaho.jpg" alt="Pocatello Idaho">
+            <p><em>Photo of my home state, Idaho</em></p>
+          </div>
+
+          <p>Idaho is known for its beautiful landscapes, mountains, and friendly communities. It is a wonderful place to explore, learn, and grow as a developer and individual.</p>
+        </div>
+
+        <div class="photo">
+          <img src="images/profile-picture.jpg" alt="Photo of Me">
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://www.w3schools.com/html/">HTML Tutorial - W3Schools</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS Documentation - MDN Web Docs</a></li>
+        <li><a href="https://www.freecodecamp.org/">FreeCodeCamp - Learn to Code for Free</a></li>
+        <li><a href="https://css-tricks.com/">CSS-Tricks - Tips, Tricks, and Techniques on using CSS</a></li>
+        <li><a href="https://web.dev/">web.dev - Web Development Resources</a></li>
+        <li><a href="https://stackoverflow.com/">Stack Overflow - Community of Developers</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <span>Paxton Porter</span> | Idaho</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
 </html>
