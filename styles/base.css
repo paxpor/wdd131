@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #24335F;
+    --secondary-color: #009129;
+    --background-color: #bdbdbd;
+    --text-color: #555555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+.highlight {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.about {
+    background-color: var(--background-color);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    padding: 0.75rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.about-content .text {
+    flex: 2;
+    padding-right: 1rem;
+}
+
+.about-content .photo {
+    width: 180px;
+    border-radius: 6px;
+}
+
+.about h3 {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.about hr {
+    width: 60%;
+    margin: 0.5rem auto;
+    border: 0;
+    border-top: 1px solid var(--secondary-color);
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem 0;
+}
+
+.location img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.resources {
+    background-color: var(--background-color);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.resources h2 {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    padding: 0.75rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+}
+
+.resources ul {
+    list-style: disc inside;
+    padding: 1rem;
+}
+
+.resources ul li {
+    margin-bottom: 0.5rem;
+}
+
+.resources a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+footer .modified {
+    color: white;
+    margin-top: 0.25rem;
+}
