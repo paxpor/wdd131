@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idaho Weather</title>
+
+  <link rel="stylesheet" href="styles/idaho.css" />
+
+  <script src="scripts/idaho.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Idaho Weather</h1>
+  </header>
+
+  <main>
+    <picture>
+      <source srcset="images/idaho-hero-small.webp" media="(max-width: 500px)">
+      <source srcset="images/idaho-hero-medium.jpg" media="(max-width: 1000px)">
+      <img src="images/idaho-hero.jpg" alt="Scenic mountains and lakes of Idaho">
+    </picture>
+
+    <section class="weather">
+      <h2>Weather <span class="icon" aria-hidden="true"></span></h2>
+      <p><strong>Location:</strong> Boise, ID</p>
+      <p><strong>Temperature:</strong> <span id="temp">42</span>°F</p>
+      <p><strong>Wind Speed:</strong> <span id="speed">6</span> mph</p>
+      <p><strong>Wind Chill:</strong> <span id="chill">N/A</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Idaho Weather | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
