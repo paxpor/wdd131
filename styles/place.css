@@ -1,79 +1,71 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", Arial, sans-serif;
+:root {
+  --primary-color: #002f6c;
+  --accent-color: #f9a825;
+  --background: #f5f7fa;
+  --text-color: #1a1a1a;
+  --font: "Segoe UI", Helvetica, sans-serif;
 }
 
 body {
-  background: #eef2f7;
-  color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 20px;
+  font-family: var(--font);
+  background-color: var(--background);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-.weather-card {
-  background: #ffffff;
-  width: 320px;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+header {
+  background-color: var(--primary-color);
+  color: white;
   text-align: center;
-  transition: 0.3s ease;
+  padding: 1rem;
 }
 
-.weather-card:hover {
-  transform: translateY(-4px);
+main {
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.weather-city {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+picture img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.weather-temp {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin: 10px 0;
+.weather {
+  background-color: white;
+  border: 3px solid var(--accent-color);
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
-.weather-icon {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 15px auto;
-  background-image: url("images/weather-svgrepo-com.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.weather h2 {
+  position: relative;
+  color: var(--primary-color);
 }
 
-.weather-description {
-  font-size: 1.1rem;
+@media (min-width: 700px) {
+  .weather h2::after {
+    content: " ⛅";
+  }
+}
+
+@media (max-width: 699px) {
+  .weather .icon {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url("images/weather.svg") no-repeat center/contain;
+  }
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
   color: #555;
-  margin-bottom: 15px;
-}
-
-.weather-details {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.weather-details div {
-  text-align: center;
-}
-
-.weather-details span {
-  display: block;
-  font-size: 0.85rem;
-  color: #666;
-}
-
-.weather-details strong {
-  font-size: 1.1rem;
-  color: #222;
+  padding: 1rem;
 }
