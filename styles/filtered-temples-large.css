@@ -1,0 +1,16 @@
+@media (min-width: 700px) {
+  nav.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .temple-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
