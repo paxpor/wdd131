@@ -1,5 +1,5 @@
 @media (min-width: 700px) {
-  nav {
+  nav.navigation {
     display: flex;
     justify-content: center;
     gap: 2rem;
