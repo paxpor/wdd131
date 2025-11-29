@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="css/form.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Review Successfully Submitted</h1>
+  </header>
+
+  <main>
+    <h2>Review Summary</h2>
+
+    <ul class="summaryList">
+      <li><strong>Product:</strong> <span id="product"></span></li>
+      <li><strong>Rating:</strong> <span id="rating"></span></li>
+      <li><strong>Date Installed:</strong> <span id="date"></span></li>
+      <li><strong>Features:</strong> <span id="features"></span></li>
+      <li><strong>Written Review:</strong> <span id="review"></span></li>
+      <li><strong>User Name:</strong> <span id="name"></span></li>
+    </ul>
+
+    <p><strong>Total Reviews Submitted on This Device:</strong> <span id="count"></span></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 · Your Name · WDD Assignment</p>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+
+    const $ = id => document.getElementById(id);
+
+    $("product").textContent = params.get("productName");
+    $("rating").textContent = params.get("rating");
+    $("date").textContent = params.get("installDate");
+
+    const features = params.getAll("features");
+    $("features").textContent = features.length ? features.join(", ") : "None";
+
+    $("review").textContent = params.get("reviewText") || "No written review.";
+    $("name").textContent = params.get("userName") || "Anonymous";
+
+    let count = Number(localStorage.getItem("reviewCount")) || 0;
+    count++;
+    localStorage.setItem("reviewCount", count);
+    $("count").textContent = count;
+  </script>
+</body>
+</html>
