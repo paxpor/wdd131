@@ -92,3 +92,25 @@ textarea {
   padding: 6px 0;
   border-bottom: 1px solid #eee;
 }
+
+@media (min-width: 600px) {
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  label {
+    width: 40%;
+  }
+
+  input, select, textarea {
+    width: 55%;
+  }
+}

@@ -50,10 +50,20 @@
       <fieldset class="features">
         <legend>Useful Features (check all that apply)</legend>
 
-        <label><input type="checkbox" name="features" value="Fast"> Fast</label>
-        <label><input type="checkbox" name="features" value="Durable"> Durable</label>
-        <label><input type="checkbox" name="features" value="Easy to Use"> Easy to Use</label>
-        <label><input type="checkbox" name="features" value="Eco-Friendly"> Eco-Friendly</label>
+        <div class="features">
+          <input type="checkbox" id="feature1" name="features" value="durable">
+          <label for="feature1">Durable</label>
+
+          <input type="checkbox" id="feature2" name="features" value="easy-install">
+          <label for="feature2">Easy Installation</label>
+
+          <input type="checkbox" id="feature3" name="features" value="energy-efficient">
+          <label for="feature3">Energy Efficient</label>
+
+          <input type="checkbox" id="feature4" name="features" value="value">
+          <label for="feature4">Good Value</label>
+        </div>
+
       </fieldset>
 
       <label for="reviewText">Written Review (optional)</label>
@@ -69,8 +79,6 @@
 <footer>
   <p>&copy; 2025 · Paxton Porter · WDD131</p> 
   <p id="lastModified"></p>
-
-  <script src="scripts/form.js" defer></script>
 </footer>
 </body>
 </html>
