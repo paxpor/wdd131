@@ -23,14 +23,14 @@ const products = [
     title: 'Cherry Wood Bowl (Small)',
     description: 'Delicately finished bowl, food-safe finish.',
     price: 65.00,
-    image: 'scripts/image/cherry_wood_bowl.jpg'
+    image: 'scripts/images/cherry_wood_bowl.jpg'
   },
   {
     id: 'jbox-01',
     title: 'Jewelry Box with Inlay',
     description: 'Keepsakes fit perfectly, soft velvet interior.',
     price: 120.00,
-    image: 'scripts/images/small_jewelery_box.webp'
+    image: 'scripts/images/small_jewelery_box.jpg'
   },
   {
     id: 'pen-02',
